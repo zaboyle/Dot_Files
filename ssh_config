@@ -1,0 +1,7 @@
+### CEAN
+Hoest caen login.engin.umich.edu
+	HostName login.engin.umich.edu
+	User zboyle
+	ControlMaster auto
+	ControlPath ~/.ssh/_%r@%h:%p
+	ContorlPersist 43200
