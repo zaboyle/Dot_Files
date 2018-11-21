@@ -1,5 +1,5 @@
 ### CEAN
-Hoest caen login.engin.umich.edu
+Host caen login.engin.umich.edu
 	HostName login.engin.umich.edu
 	User zboyle
 	ControlMaster auto
