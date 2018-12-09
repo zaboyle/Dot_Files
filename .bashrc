@@ -19,4 +19,4 @@ eecs398="//mnt/c/Users/zaboy/Desktop/EECS398/"
 mfly="//mnt/c/Users/zaboy/Desktop/MFly/auvsi-cv/"
 desk="//mnt/c/Users/zaboy/Desktop/"
 #shortcut to run a bash script to set up C++ debugging files in VSC
-alias vsc="sh //mnt/c/Users/zaboy/Desktop/freetime_programming/Dot_Files/vsc_setup.sh"
+alias vsc="sh //mnt/c/Users/zaboy/Desktop/freetime_programming/Bash_Scripts/vsc_setup.sh"
