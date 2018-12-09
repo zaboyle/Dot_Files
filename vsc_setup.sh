@@ -37,7 +37,7 @@ EXECUTABLE=${1%.*}.exe
 PATH_TO_GDB="C:/MinGW-CPTR-124/bin/gdb.exe"
 PATH_TO_GPP="C:/MinGW-CPTR-124/bin/g++.exe"
 
-#make the launch file
+#make the launch file. If one already exists, it will be overwritten
 echo "{\n\t\"version\": \"0.2.0\",\n\t\"configurations\": [\n\t\t{" > $L
 echo "\t\t\t\"name\": \"(gdb) Launch\",\n\t\t\t\"type\": \"cppdbg\",\n\t\t\t\"request\": \"launch\"," >> $L
 echo "\t\t\t\"program\": \"\${workspaceRoot}/$EXECUTABLE\",\n\t\t\t\"args\": [\n\t\t\t\t\"comma-separated-list-of-args-here\"\n\t\t\t]," >> $L
@@ -47,7 +47,7 @@ echo "\t\t\t\"preLaunchTask\": \"build $EXECUTABLE\",\n\t\t\t\"setupCommands\": 
 echo "\t\t\t\t\t\"description\": \"Enable pretty-printing for gdb\",\n\t\t\t\t\t\"text\": \"-enable-pretty-printing\"," >> $L
 echo "\t\t\t\t\t\"ignoreFailures\": true\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}" >> $L
 
-#make the task file
+#make the task file. If one already exists, it will be overwritten
 echo "{\n\t\"version\": \"2.0.0\",\n\t\"tasks\": [\n\t\t{\n\t\t\t\"label\": \"build $EXECUTABLE\"," > $T
 echo "\t\t\t\"type\": \"shell\",\n\t\t\t\"command\": \"$PATH_TO_GPP\",\n\t\t\t\"args\": [" >> $T
 echo "\t\t\t\t\"-g\",\n\t\t\t\t\"$FILE\",\n\t\t\t\t\"-o\",\n\t\t\t\t\"$EXECUTABLE\"\n\t\t\t]," >> $T
