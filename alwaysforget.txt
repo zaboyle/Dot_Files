@@ -1,0 +1,38 @@
+#
+# =======================
+#      Always Forget
+# =======================
+#
+# Zach Boyle
+# created: 11/4/19
+
+# ====
+# Git
+# ====
+
+
+
+
+# ====
+# Python
+# ====
+
+
+
+
+# ====
+# Misc
+# ====
+
+# go for a ride on the good ol' steam  locomotive
+$ sl
+
+# watch star wars
+$ telnet towel.blinkenlights.nl
+
+# see list of cowsay animals
+$ cowsay -l
+
+# make the linux penguin say stuff
+$ cowsay -f tux "words here"
+
